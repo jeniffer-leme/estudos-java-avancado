@@ -1,5 +1,3 @@
-package exercicios.beluzo.ex02;
-
 import java.util.ArrayList;
 import java.util.List;
 
