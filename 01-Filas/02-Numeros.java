@@ -18,7 +18,8 @@ public class Numeros {
         numero.add(52);
         numero.add(90);
         
-        System.out.println("1° Elemento: " + numero.get(0));
+        System.out.println("1° Elemento: " + numero.getFirst());
+        System.out.println("Último Elemento: " + numero.getLast());
         System.out.println("5° Elemento: " + numero.get(4));
     }
 }
