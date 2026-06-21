@@ -1,5 +1,3 @@
-package exercicios.beluzo.ex03;
-
 import java.util.LinkedList;
 import java.util.List;
 
