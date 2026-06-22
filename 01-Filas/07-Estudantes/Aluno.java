@@ -1,44 +1,33 @@
-public class Aluno {
-    String nome;
-    int idade;
-    String curso;
+import java.util.ArrayList;
+import java.util.List;
 
-    public Aluno(String nome, int idade, String curso) {
-        setNome(nome);
-        setIdade(idade);
-        setCurso(curso);
+public class Main {
+    public static void main(String[] args) {
+        
+        List<Aluno> aluno = new ArrayList();
+        
+        Aluno a1 = new Aluno("Romeu", 21, "Licenciatura");
+        Aluno a2 = new Aluno("Bruna", 17, "Administração");
+        Aluno a3 = new Aluno("Manuel", 25, "ADS");
+        
+        aluno.add(a1);
+        aluno.add(a2);
+        aluno.add(a3);
+        
+        System.out.println("====ALUNOS====");
+        for(Aluno a : aluno) {
+            System.out.println(a);
+            System.out.println("----------------------");
+        }
+        
+        System.out.println();
+        
+        aluno.removeIf(a -> a.getIdade() < 18);
+        
+        System.out.println("====ALUNOS====");
+        for(Aluno a : aluno) {
+            System.out.println(a);
+            System.out.println("----------------------");
+        }
     }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public int getIdade() {
-        return idade;
-    }
-
-    public String getCurso() {
-        return curso;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public void setIdade(int idade) {
-        this.idade = idade;
-    }
-
-    public void setCurso(String curso) {
-        this.curso = curso;
-    }
-
-    @Override
-    public String toString() {
-        return "Nome: " + nome + "\n" +
-                "Idade: " + idade + "\n" +
-                "Curso: " + curso;
-    }
-    
-    
 }
