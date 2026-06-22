@@ -47,14 +47,22 @@ public class Main {
                     
                 case 2:
                     System.out.println("\n----- PRÓXIMO DA FILA -----");
-                    System.out.println(cliente.peek());
+                    if(cliente.isEmpty()) {
+                        System.out.println("Não tem cliente na fila!");
+                    } else {
+                        System.out.println(cliente.peek());
+                    }
                     
                     System.out.println();
                     break;
                     
                 case 3:
                     System.out.println("\n----- ATENDER PRÓXIMO DA FILA -----");
-                    System.out.println(cliente.poll());
+                    if(cliente.isEmpty()) {
+                        System.out.println("A fila está vazia!");
+                    } else {
+                        System.out.println(cliente.poll());
+                    }
                     
                     System.out.println();
                     break;
