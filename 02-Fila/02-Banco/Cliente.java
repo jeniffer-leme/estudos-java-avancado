@@ -1,5 +1,3 @@
-package exercicios.beluzo.ex12;
-
 public class Cliente {
     private int codigo;
     private String nome;
